@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테트리스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>테트리스</h1>
+      <p class="subtitle">HTML · CSS · JavaScript 입문 프로젝트</p>
+    </header>
+
+    <main class="game-layout">
+      <section class="board-section" aria-label="게임 보드">
+        <div
+          id="board"
+          class="board"
+          tabindex="0"
+          aria-label="10열 20행 게임 보드"
+        ></div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="panel">
+          <h2>점수</h2>
+          <p id="score" class="score-value">0</p>
+          <p id="game-status" class="game-status" hidden>게임 오버</p>
+        </div>
+
+        <div class="panel controls-panel">
+          <h2>조작법</h2>
+          <ul class="controls-list">
+            <li><kbd>←</kbd> 왼쪽 이동</li>
+            <li><kbd>→</kbd> 오른쪽 이동</li>
+            <li><kbd>↓</kbd> 한 칸 빠르게 내리기</li>
+            <li><kbd>↑</kbd> 블록 회전</li>
+            <li><kbd>Space</kbd> 즉시 낙하 (hard drop)</li>
+          </ul>
+        </div>
+
+        <div class="panel button-panel">
+          <button id="start-btn" type="button" class="btn btn-primary">시작</button>
+          <button id="restart-btn" type="button" class="btn btn-secondary">재시작</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p><strong>시작</strong> 버튼을 누른 뒤 키보드로 블록을 조작합니다.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
